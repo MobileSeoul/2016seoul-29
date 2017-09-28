@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight ="1"
+            android:layout_above="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:id="@+id/festival_ll">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="축제"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/festival_tv"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:id="@+id/tour_ll">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문화"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/tour_tv"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:id="@+id/food_ll">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="음식"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/food_tv"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:id="@+id/place_ll">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textSize="15dp"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/place_tv"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id = "@+id/start_ll"
+        android:background="#000000"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main1"
+            android:id="@+id/loding_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="가볍게"
+            android:id="@+id/textView12"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="청계천 나들이~!"
+            android:id="@+id/textView13"
+            android:textSize="45sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView12"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="멋진 축제 많은 구경거리가"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/textView14"
+                android:layout_above="@+id/textView12"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="함께하는"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                android:gravity="right"
+                android:id="@+id/textView15"
+                android:layout_above="@+id/textView12"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="45dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
